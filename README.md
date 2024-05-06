@@ -69,7 +69,7 @@ $$
 ⭐If you are interest in RMIB, please consider to cite this paper:
 ```
 @inproceedings{
-    pan2022rmib,
+    pan2024rmib,
     title={RMIB: Representation Matching Information Bottleneck for Matching Text Representations},
     author={Haihui Pan, Zhifang Liao, Wenrui Xie, Kun Han},
     booktitle={International Conference on Machine Learning},
