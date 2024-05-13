@@ -1,0 +1,56 @@
+[
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/snli',
+        ],
+        __repeat__: 1,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/scitail',
+        ],
+        __repeat__: 1,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/quora',
+        ],
+        __repeat__: 1,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/wikiqa',
+        ],
+        __repeat__: 1,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/sick',
+        ],
+        __repeat__: 1,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/trecqa',
+        ],
+        __repeat__: 1,
+        eval_file: 'test',
+    },
+]

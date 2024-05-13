@@ -1,0 +1,26 @@
+{
+    data_dir: 'data/sick',
+    output_dir: 'sick',
+    metric: 'acc',
+    watch_metrics: [],
+
+    model: {
+        alignment: 'identity',
+        enc_layers: 3,
+        blocks: 3,
+        hidden_size: 200,
+    },
+
+    routine: {
+        epochs: 80,
+        log_per_samples: 1280,
+        eval_per_samples: 6400,
+    },
+
+    optim: { // fixed learning rate
+        lr: 0.001,
+        lr_warmup_samples: 0,
+        lr_decay_rate: 1.0,
+        batch_size: 128,
+    },
+}

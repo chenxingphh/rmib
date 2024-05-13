@@ -1,0 +1,26 @@
+{
+    data_dir: 'data/rte',
+    output_dir: 'rte',
+    metric: 'acc',
+    watch_metrics: [],
+
+    model: {
+        alignment: 'identity',
+        enc_layers: 3,
+        blocks: 3,
+        hidden_size: 200,
+    },
+
+    routine: {
+        epochs: 80,
+        log_per_samples: 64,
+        eval_per_samples: 1024,
+    },
+
+    optim: { // fixed learning rate
+        lr: 0.001,
+        lr_warmup_samples: 0,
+        lr_decay_rate: 1.0,
+        batch_size: 128,
+    },
+}

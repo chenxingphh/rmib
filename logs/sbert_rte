@@ -1,0 +1,374 @@
+nohup: ignoring input
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'cls.predictions.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+05/05/2024 02:41:51 TensorBoard activated.
+2 symbols found: 0 1
+vocab coverage 15867/24194 | OOV occurrences 11144/139673 (7.9786%)
+Covered by pretrained vectors 97.5610%. outside pretrained: "the world's however, monday, said, years, year, country's "i people, ...
+top words:
+the of in a to and is was for that
+filtered words:
+range, manufacturer, committee, identified, chairman, groups, actor's daughter, widow, stroke. ... zamka, gracia, healthy, piazza, degania. falconi, 10/13/1902, broadway, nationalities, historically,
+05/05/2024 02:43:59 #classes: 2; #vocab: 15869
+05/05/2024 02:44:26 trainable params: 138,994,180
+05/05/2024 02:44:26 trainable params (exclude embeddings): 138,994,180
+05/05/2024 02:44:26 { '__index__': 0,
+  '__parents__': ['default', 'data/rte'],
+  '__repeat__': 1,
+  'alignment': 'identity',
+  'batch_size': 36,
+  'beta1': 0.9,
+  'beta2': 0.999,
+  'blocks': 3,
+  'connection': 'aug',
+  'cuda': True,
+  'data_dir': 'data/rte',
+  'deterministic': True,
+  'dropout': 0.2,
+  'early_stopping': 11112,
+  'embedding_dim': 300,
+  'embedding_mode': 'freq',
+  'enc_layers': 3,
+  'encoder': 'cnn',
+  'epochs': 6,
+  'eval_epoch': True,
+  'eval_file': 'test',
+  'eval_per_samples': 1024,
+  'eval_per_samples_warmup': 40000,
+  'eval_per_updates': 29,
+  'eval_per_updates_warmup': 1112,
+  'eval_subset': None,
+  'eval_warmup_samples': 0,
+  'eval_warmup_steps': 0,
+  'fix_embeddings': True,
+  'fusion': 'full',
+  'grad_clipping': 5,
+  'hidden_size': 200,
+  'ib_type': 'None',
+  'kernel_sizes': [3],
+  'kl_beta': 0.0,
+  'log_file': 'log.txt',
+  'log_per_samples': 64,
+  'log_per_updates': 2,
+  'lower_case': True,
+  'lr': 2e-05,
+  'lr_decay_rate': 1.0,
+  'lr_decay_samples': 128000,
+  'lr_decay_steps': 3556,
+  'lr_warmup_samples': 0,
+  'lr_warmup_steps': 0,
+  'max_len': 100,
+  'max_loss': 999.0,
+  'max_vocab': 999999,
+  'metric': 'acc',
+  'min_df': 5,
+  'min_len': 1,
+  'min_lr': 1e-05,
+  'min_samples': 0,
+  'min_steps': 0,
+  'model': 'sbert',
+  'model_path': 'bert-base-uncased',
+  'multi_gpu': True,
+  'name': 'benchmark_sbert_36',
+  'num_classes': 2,
+  'num_vocab': 15869,
+  'output_dir': 'models/rte',
+  'padding': 0,
+  'prediction': 'full',
+  'pretrained_embeddings': 'resources/glove.840B.300d.txt',
+  'resume': None,
+  'save': True,
+  'save_all': False,
+  'seed': 32,
+  'sort_by_len': False,
+  'summary_dir': 'models/rte/benchmark_sbert_36',
+  'summary_per_logs': 20,
+  'summary_per_updates': 40,
+  'tensorboard': True,
+  'tolerance_samples': 400000,
+  'watch_metrics': ['acc'],
+  'weight_decay': 0,
+  'z_beat': 0.0,
+  'z_ce_loss_beat': 0.0}
+05/05/2024 02:44:26 train (2490) | test (277)
+05/05/2024 02:44:27 setup complete: 0:02:36s.
+05/05/2024 02:44:27 Epoch: 1
+05/05/2024 02:44:29 > epoch 1 updates 2 loss: 0.7090 lr: 2.0000e-05 gnorm: 7.393005/05/2024 02:44:30 > epoch 1 updates 4 loss: 0.6801 lr: 2.0000e-05 gnorm: 4.291105/05/2024 02:44:31 > epoch 1 updates 6 loss: 0.8095 lr: 2.0000e-05 gnorm: 9.038805/05/2024 02:44:32 > epoch 1 updates 8 loss: 0.6998 lr: 2.0000e-05 gnorm: 4.420705/05/2024 02:44:33 > epoch 1 updates 10 loss: 0.6802 lr: 2.0000e-05 gnorm: 5.532905/05/2024 02:44:34 > epoch 1 updates 12 loss: 0.7018 lr: 2.0000e-05 gnorm: 4.592105/05/2024 02:44:35 > epoch 1 updates 14 loss: 0.7328 lr: 2.0000e-05 gnorm: 6.499505/05/2024 02:44:36 > epoch 1 updates 16 loss: 0.6975 lr: 2.0000e-05 gnorm: 4.786305/05/2024 02:44:37 > epoch 1 updates 18 loss: 0.7111 lr: 2.0000e-05 gnorm: 9.471605/05/2024 02:44:38 > epoch 1 updates 20 loss: 0.6957 lr: 2.0000e-05 gnorm: 4.767305/05/2024 02:44:39 > epoch 1 updates 22 loss: 0.6945 lr: 2.0000e-05 gnorm: 5.225805/05/2024 02:44:40 > epoch 1 updates 24 loss: 0.7037 lr: 2.0000e-05 gnorm: 4.696805/05/2024 02:44:41 > epoch 1 updates 26 loss: 0.7267 lr: 2.0000e-05 gnorm: 7.373405/05/2024 02:44:43 > epoch 1 updates 28 loss: 0.6839 lr: 2.0000e-05 gnorm: 6.111805/05/2024 02:44:43 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.67it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.59it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.55it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.43it/s]                                                         05/05/2024 02:44:49 
+05/05/2024 02:44:49 train loss: 0.7088 lr: 2.0000e-05 gnorm: 6.0120 clip: 8
+05/05/2024 02:44:49 valid loss: 0.7012 acc: 0.4838 [NEW BEST]
+05/05/2024 02:44:49 > epoch 1 updates 30 loss: 0.7048 lr: 2.0000e-05 gnorm: 6.164905/05/2024 02:44:50 > epoch 1 updates 32 loss: 0.6990 lr: 2.0000e-05 gnorm: 3.983705/05/2024 02:44:52 > epoch 1 updates 34 loss: 0.7129 lr: 2.0000e-05 gnorm: 5.973105/05/2024 02:44:53 > epoch 1 updates 36 loss: 0.7184 lr: 2.0000e-05 gnorm: 7.899305/05/2024 02:44:54 > epoch 1 updates 38 loss: 0.7264 lr: 2.0000e-05 gnorm: 3.752605/05/2024 02:44:55 > epoch 1 updates 40 loss: 0.6899 lr: 2.0000e-05 gnorm: 6.010005/05/2024 02:44:56 > epoch 1 updates 42 loss: 0.7481 lr: 2.0000e-05 gnorm: 4.265105/05/2024 02:44:57 > epoch 1 updates 44 loss: 0.7188 lr: 2.0000e-05 gnorm: 7.926205/05/2024 02:44:58 > epoch 1 updates 46 loss: 0.6945 lr: 2.0000e-05 gnorm: 7.711605/05/2024 02:44:59 > epoch 1 updates 48 loss: 0.5926 lr: 2.0000e-05 gnorm: 10.492505/05/2024 02:45:00 > epoch 1 updates 50 loss: 0.6876 lr: 2.0000e-05 gnorm: 5.538805/05/2024 02:45:01 > epoch 1 updates 52 loss: 0.7042 lr: 2.0000e-05 gnorm: 5.414205/05/2024 02:45:02 > epoch 1 updates 54 loss: 0.6848 lr: 2.0000e-05 gnorm: 4.611005/05/2024 02:45:03 > epoch 1 updates 56 loss: 0.7258 lr: 2.0000e-05 gnorm: 3.960605/05/2024 02:45:04 > epoch 1 updates 58 loss: 0.7219 lr: 2.0000e-05 gnorm: 4.600705/05/2024 02:45:04 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.87it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.58it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.51it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.39it/s]                                                         05/05/2024 02:45:11 
+05/05/2024 02:45:11 train loss: 0.7018 lr: 2.0000e-05 gnorm: 5.8796 clip: 9
+05/05/2024 02:45:11 valid loss: 0.6979 acc: 0.5235 [NEW BEST]
+05/05/2024 02:45:12 > epoch 1 updates 60 loss: 0.6754 lr: 2.0000e-05 gnorm: 5.434905/05/2024 02:45:13 > epoch 1 updates 62 loss: 0.6797 lr: 2.0000e-05 gnorm: 7.237805/05/2024 02:45:14 > epoch 1 updates 64 loss: 0.7084 lr: 2.0000e-05 gnorm: 4.651105/05/2024 02:45:15 > epoch 1 updates 66 loss: 0.6560 lr: 2.0000e-05 gnorm: 7.404605/05/2024 02:45:16 > epoch 1 updates 68 loss: 0.6690 lr: 2.0000e-05 gnorm: 6.338205/05/2024 02:45:17 > epoch 1 updates 70 loss: 0.7128 lr: 2.0000e-05 gnorm: 5.892605/05/2024 02:45:17 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.64it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.53it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.47it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.34it/s]                                                         05/05/2024 02:45:24 
+05/05/2024 02:45:24 train loss: 0.6837 lr: 2.0000e-05 gnorm: 6.1618 clip: 5
+05/05/2024 02:45:24 valid loss: 0.6940 acc: 0.5307 [NEW BEST]
+05/05/2024 02:45:24 
+05/05/2024 02:45:24 Epoch: 2
+05/05/2024 02:45:25 > epoch 2 updates 72 loss: 0.6780 lr: 2.0000e-05 gnorm: 8.277905/05/2024 02:45:26 > epoch 2 updates 74 loss: 0.6416 lr: 2.0000e-05 gnorm: 4.012705/05/2024 02:45:27 > epoch 2 updates 76 loss: 0.6449 lr: 2.0000e-05 gnorm: 7.507205/05/2024 02:45:28 > epoch 2 updates 78 loss: 0.6405 lr: 2.0000e-05 gnorm: 6.267705/05/2024 02:45:29 > epoch 2 updates 80 loss: 0.6538 lr: 2.0000e-05 gnorm: 6.358305/05/2024 02:45:30 > epoch 2 updates 82 loss: 0.6501 lr: 2.0000e-05 gnorm: 4.710105/05/2024 02:45:31 > epoch 2 updates 84 loss: 0.6509 lr: 2.0000e-05 gnorm: 4.429305/05/2024 02:45:32 > epoch 2 updates 86 loss: 0.6558 lr: 2.0000e-05 gnorm: 10.356905/05/2024 02:45:33 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.62it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.45it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.40it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.27it/s]                                                         05/05/2024 02:45:41 
+05/05/2024 02:45:41 train loss: 0.6519 lr: 2.0000e-05 gnorm: 6.4955 clip: 5
+05/05/2024 02:45:41 valid loss: 0.6965 acc: 0.5451 [NEW BEST]
+05/05/2024 02:45:41 > epoch 2 updates 88 loss: 0.6321 lr: 2.0000e-05 gnorm: 3.415805/05/2024 02:45:42 > epoch 2 updates 90 loss: 0.6285 lr: 2.0000e-05 gnorm: 4.519105/05/2024 02:45:43 > epoch 2 updates 92 loss: 0.6617 lr: 2.0000e-05 gnorm: 7.285205/05/2024 02:45:44 > epoch 2 updates 94 loss: 0.6299 lr: 2.0000e-05 gnorm: 5.865205/05/2024 02:45:45 > epoch 2 updates 96 loss: 0.6020 lr: 2.0000e-05 gnorm: 4.024505/05/2024 02:45:47 > epoch 2 updates 98 loss: 0.6504 lr: 2.0000e-05 gnorm: 5.690405/05/2024 02:45:48 > epoch 2 updates 100 loss: 0.6388 lr: 2.0000e-05 gnorm: 7.934605/05/2024 02:45:49 > epoch 2 updates 102 loss: 0.6436 lr: 2.0000e-05 gnorm: 4.839705/05/2024 02:45:50 > epoch 2 updates 104 loss: 0.6380 lr: 2.0000e-05 gnorm: 4.403605/05/2024 02:45:51 > epoch 2 updates 106 loss: 0.6581 lr: 2.0000e-05 gnorm: 4.318305/05/2024 02:45:52 > epoch 2 updates 108 loss: 0.6292 lr: 2.0000e-05 gnorm: 6.024605/05/2024 02:45:53 > epoch 2 updates 110 loss: 0.6560 lr: 2.0000e-05 gnorm: 4.473505/05/2024 02:45:54 > epoch 2 updates 112 loss: 0.6311 lr: 2.0000e-05 gnorm: 6.585305/05/2024 02:45:55 > epoch 2 updates 114 loss: 0.6551 lr: 2.0000e-05 gnorm: 6.581505/05/2024 02:45:56 > epoch 2 updates 116 loss: 0.6089 lr: 2.0000e-05 gnorm: 3.841905/05/2024 02:45:56 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.44it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.37it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.35it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.23it/s]                                                         05/05/2024 02:45:57 
+05/05/2024 02:45:57 train loss: 0.6376 lr: 2.0000e-05 gnorm: 5.3240 clip: 7
+05/05/2024 02:45:57 valid loss: 0.6944 acc: 0.5162 [BEST: 0.5451]
+05/05/2024 02:45:58 > epoch 2 updates 118 loss: 0.6491 lr: 2.0000e-05 gnorm: 3.833005/05/2024 02:45:59 > epoch 2 updates 120 loss: 0.6171 lr: 2.0000e-05 gnorm: 3.975505/05/2024 02:46:00 > epoch 2 updates 122 loss: 0.6548 lr: 2.0000e-05 gnorm: 4.547005/05/2024 02:46:01 > epoch 2 updates 124 loss: 0.6040 lr: 2.0000e-05 gnorm: 3.997105/05/2024 02:46:02 > epoch 2 updates 126 loss: 0.6684 lr: 2.0000e-05 gnorm: 3.923405/05/2024 02:46:03 > epoch 2 updates 128 loss: 0.6572 lr: 2.0000e-05 gnorm: 6.043905/05/2024 02:46:04 > epoch 2 updates 130 loss: 0.6895 lr: 2.0000e-05 gnorm: 5.501505/05/2024 02:46:05 > epoch 2 updates 132 loss: 0.6546 lr: 2.0000e-05 gnorm: 3.825905/05/2024 02:46:06 > epoch 2 updates 134 loss: 0.6685 lr: 2.0000e-05 gnorm: 11.170205/05/2024 02:46:07 > epoch 2 updates 136 loss: 0.4185 lr: 2.0000e-05 gnorm: 7.549605/05/2024 02:46:09 > epoch 2 updates 138 loss: 0.6375 lr: 2.0000e-05 gnorm: 4.961705/05/2024 02:46:10 > epoch 2 updates 140 loss: 0.6346 lr: 2.0000e-05 gnorm: 3.710505/05/2024 02:46:10 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.43it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.35it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.33it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.20it/s]                                                         05/05/2024 02:46:10 
+05/05/2024 02:46:10 train loss: 0.6289 lr: 2.0000e-05 gnorm: 5.2795 clip: 4
+05/05/2024 02:46:10 valid loss: 0.6999 acc: 0.4874 [BEST: 0.5451]
+05/05/2024 02:46:10 
+05/05/2024 02:46:10 Epoch: 3
+05/05/2024 02:46:11 > epoch 3 updates 142 loss: 0.5581 lr: 2.0000e-05 gnorm: 3.819405/05/2024 02:46:12 > epoch 3 updates 144 loss: 0.5569 lr: 2.0000e-05 gnorm: 5.865505/05/2024 02:46:13 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.36it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.31it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.28it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.14it/s]                                                         05/05/2024 02:46:13 
+05/05/2024 02:46:13 train loss: 0.5575 lr: 2.0000e-05 gnorm: 4.8476 clip: 1
+05/05/2024 02:46:13 valid loss: 0.6931 acc: 0.5162 [BEST: 0.5451]
+05/05/2024 02:46:14 > epoch 3 updates 146 loss: 0.5874 lr: 2.0000e-05 gnorm: 4.392605/05/2024 02:46:15 > epoch 3 updates 148 loss: 0.5703 lr: 2.0000e-05 gnorm: 7.199805/05/2024 02:46:16 > epoch 3 updates 150 loss: 0.6518 lr: 2.0000e-05 gnorm: 10.312605/05/2024 02:46:17 > epoch 3 updates 152 loss: 0.5663 lr: 2.0000e-05 gnorm: 4.411505/05/2024 02:46:18 > epoch 3 updates 154 loss: 0.5826 lr: 2.0000e-05 gnorm: 5.382605/05/2024 02:46:19 > epoch 3 updates 156 loss: 0.5715 lr: 2.0000e-05 gnorm: 4.389905/05/2024 02:46:21 > epoch 3 updates 158 loss: 0.6033 lr: 2.0000e-05 gnorm: 4.417805/05/2024 02:46:22 > epoch 3 updates 160 loss: 0.5764 lr: 2.0000e-05 gnorm: 5.852205/05/2024 02:46:23 > epoch 3 updates 162 loss: 0.6256 lr: 2.0000e-05 gnorm: 6.108205/05/2024 02:46:24 > epoch 3 updates 164 loss: 0.5665 lr: 2.0000e-05 gnorm: 3.684505/05/2024 02:46:25 > epoch 3 updates 166 loss: 0.5957 lr: 2.0000e-05 gnorm: 4.867805/05/2024 02:46:26 > epoch 3 updates 168 loss: 0.6482 lr: 2.0000e-05 gnorm: 5.806705/05/2024 02:46:27 > epoch 3 updates 170 loss: 0.6076 lr: 2.0000e-05 gnorm: 6.612105/05/2024 02:46:28 > epoch 3 updates 172 loss: 0.6028 lr: 2.0000e-05 gnorm: 4.315205/05/2024 02:46:29 > epoch 3 updates 174 loss: 0.5970 lr: 2.0000e-05 gnorm: 3.866505/05/2024 02:46:29 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.42it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.30it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.26it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.10it/s]                                                         05/05/2024 02:46:30 
+05/05/2024 02:46:30 train loss: 0.5972 lr: 2.0000e-05 gnorm: 5.4178 clip: 7
+05/05/2024 02:46:30 valid loss: 0.6990 acc: 0.5162 [BEST: 0.5451]
+05/05/2024 02:46:31 > epoch 3 updates 176 loss: 0.6155 lr: 2.0000e-05 gnorm: 5.791205/05/2024 02:46:32 > epoch 3 updates 178 loss: 0.3271 lr: 2.0000e-05 gnorm: 6.218405/05/2024 02:46:33 > epoch 3 updates 180 loss: 0.5876 lr: 2.0000e-05 gnorm: 3.748005/05/2024 02:46:34 > epoch 3 updates 182 loss: 0.5544 lr: 2.0000e-05 gnorm: 5.472605/05/2024 02:46:35 > epoch 3 updates 184 loss: 0.6176 lr: 2.0000e-05 gnorm: 7.859105/05/2024 02:46:36 > epoch 3 updates 186 loss: 0.5504 lr: 2.0000e-05 gnorm: 4.176805/05/2024 02:46:37 > epoch 3 updates 188 loss: 0.6054 lr: 2.0000e-05 gnorm: 4.491205/05/2024 02:46:38 > epoch 3 updates 190 loss: 0.5677 lr: 2.0000e-05 gnorm: 4.581405/05/2024 02:46:39 > epoch 3 updates 192 loss: 0.6322 lr: 2.0000e-05 gnorm: 6.354605/05/2024 02:46:40 > epoch 3 updates 194 loss: 0.6155 lr: 2.0000e-05 gnorm: 8.241305/05/2024 02:46:42 > epoch 3 updates 196 loss: 0.6303 lr: 2.0000e-05 gnorm: 5.597205/05/2024 02:46:43 > epoch 3 updates 198 loss: 0.5778 lr: 2.0000e-05 gnorm: 4.906505/05/2024 02:46:44 > epoch 3 updates 200 loss: 0.5426 lr: 2.0000e-05 gnorm: 3.789405/05/2024 02:46:45 > epoch 3 updates 202 loss: 0.5510 lr: 2.0000e-05 gnorm: 4.443705/05/2024 02:46:45 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.33it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.23it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.20it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.07it/s]                                                         05/05/2024 02:46:46 
+05/05/2024 02:46:46 train loss: 0.5704 lr: 2.0000e-05 gnorm: 5.3961 clip: 7
+05/05/2024 02:46:46 valid loss: 0.7092 acc: 0.4801 [BEST: 0.5451]
+05/05/2024 02:46:47 > epoch 3 updates 204 loss: 0.6025 lr: 2.0000e-05 gnorm: 4.451005/05/2024 02:46:48 > epoch 3 updates 206 loss: 0.5686 lr: 2.0000e-05 gnorm: 3.798205/05/2024 02:46:49 > epoch 3 updates 208 loss: 0.6200 lr: 2.0000e-05 gnorm: 4.814905/05/2024 02:46:50 > epoch 3 updates 210 loss: 0.6294 lr: 2.0000e-05 gnorm: 4.919805/05/2024 02:46:50 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.39it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.23it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.17it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.02it/s]                                                         05/05/2024 02:46:50 
+05/05/2024 02:46:50 train loss: 0.6053 lr: 2.0000e-05 gnorm: 4.4990 clip: 0
+05/05/2024 02:46:50 valid loss: 0.7172 acc: 0.4874 [BEST: 0.5451]
+05/05/2024 02:46:50 
+05/05/2024 02:46:50 Epoch: 4
+05/05/2024 02:46:52 > epoch 4 updates 212 loss: 0.5478 lr: 2.0000e-05 gnorm: 5.120305/05/2024 02:46:53 > epoch 4 updates 214 loss: 0.5628 lr: 2.0000e-05 gnorm: 10.109105/05/2024 02:46:54 > epoch 4 updates 216 loss: 0.5210 lr: 2.0000e-05 gnorm: 3.459605/05/2024 02:46:55 > epoch 4 updates 218 loss: 0.5208 lr: 2.0000e-05 gnorm: 3.818305/05/2024 02:46:56 > epoch 4 updates 220 loss: 0.4715 lr: 2.0000e-05 gnorm: 3.754105/05/2024 02:46:57 > epoch 4 updates 222 loss: 0.5768 lr: 2.0000e-05 gnorm: 6.485005/05/2024 02:46:58 > epoch 4 updates 224 loss: 0.4978 lr: 2.0000e-05 gnorm: 4.956305/05/2024 02:46:59 > epoch 4 updates 226 loss: 0.4970 lr: 2.0000e-05 gnorm: 3.551505/05/2024 02:47:00 > epoch 4 updates 228 loss: 0.2341 lr: 2.0000e-05 gnorm: 7.350505/05/2024 02:47:01 > epoch 4 updates 230 loss: 0.5222 lr: 2.0000e-05 gnorm: 3.730905/05/2024 02:47:03 > epoch 4 updates 232 loss: 0.4968 lr: 2.0000e-05 gnorm: 7.179605/05/2024 02:47:03 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.24it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.20it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.18it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.05it/s]                                                         05/05/2024 02:47:03 
+05/05/2024 02:47:03 train loss: 0.4941 lr: 2.0000e-05 gnorm: 5.4082 clip: 5
+05/05/2024 02:47:03 valid loss: 0.7161 acc: 0.4982 [BEST: 0.5451]
+05/05/2024 02:47:04 > epoch 4 updates 234 loss: 0.4863 lr: 2.0000e-05 gnorm: 5.982405/05/2024 02:47:05 > epoch 4 updates 236 loss: 0.5468 lr: 2.0000e-05 gnorm: 6.209705/05/2024 02:47:06 > epoch 4 updates 238 loss: 0.6057 lr: 2.0000e-05 gnorm: 8.320005/05/2024 02:47:07 > epoch 4 updates 240 loss: 0.5353 lr: 2.0000e-05 gnorm: 4.397305/05/2024 02:47:09 > epoch 4 updates 242 loss: 0.4757 lr: 2.0000e-05 gnorm: 4.431205/05/2024 02:47:10 > epoch 4 updates 244 loss: 0.5905 lr: 2.0000e-05 gnorm: 6.799505/05/2024 02:47:11 > epoch 4 updates 246 loss: 0.5810 lr: 2.0000e-05 gnorm: 10.445505/05/2024 02:47:12 > epoch 4 updates 248 loss: 0.4851 lr: 2.0000e-05 gnorm: 3.952905/05/2024 02:47:13 > epoch 4 updates 250 loss: 0.5311 lr: 2.0000e-05 gnorm: 5.279805/05/2024 02:47:14 > epoch 4 updates 252 loss: 0.5614 lr: 2.0000e-05 gnorm: 5.238705/05/2024 02:47:15 > epoch 4 updates 254 loss: 0.5109 lr: 2.0000e-05 gnorm: 4.276705/05/2024 02:47:16 > epoch 4 updates 256 loss: 0.5358 lr: 2.0000e-05 gnorm: 3.932805/05/2024 02:47:17 > epoch 4 updates 258 loss: 0.5541 lr: 2.0000e-05 gnorm: 9.352005/05/2024 02:47:18 > epoch 4 updates 260 loss: 0.5254 lr: 2.0000e-05 gnorm: 6.221905/05/2024 02:47:19 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.21it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.15it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.11it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.98it/s]                                                         05/05/2024 02:47:20 
+05/05/2024 02:47:20 train loss: 0.5375 lr: 2.0000e-05 gnorm: 6.0567 clip: 9
+05/05/2024 02:47:20 valid loss: 0.7294 acc: 0.5018 [BEST: 0.5451]
+05/05/2024 02:47:20 > epoch 4 updates 262 loss: 0.5212 lr: 2.0000e-05 gnorm: 4.272305/05/2024 02:47:21 > epoch 4 updates 264 loss: 0.5056 lr: 2.0000e-05 gnorm: 4.864905/05/2024 02:47:22 > epoch 4 updates 266 loss: 0.5548 lr: 2.0000e-05 gnorm: 5.221305/05/2024 02:47:23 > epoch 4 updates 268 loss: 0.5016 lr: 2.0000e-05 gnorm: 4.497105/05/2024 02:47:24 > epoch 4 updates 270 loss: 0.5844 lr: 2.0000e-05 gnorm: 5.267705/05/2024 02:47:26 > epoch 4 updates 272 loss: 0.5782 lr: 2.0000e-05 gnorm: 10.821705/05/2024 02:47:27 > epoch 4 updates 274 loss: 0.5515 lr: 2.0000e-05 gnorm: 7.307005/05/2024 02:47:28 > epoch 4 updates 276 loss: 0.6154 lr: 2.0000e-05 gnorm: 5.443605/05/2024 02:47:29 > epoch 4 updates 278 loss: 0.4647 lr: 2.0000e-05 gnorm: 4.017905/05/2024 02:47:30 > epoch 4 updates 280 loss: 0.4890 lr: 2.0000e-05 gnorm: 5.581905/05/2024 02:47:30 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.13it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.12it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.14it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.01it/s]                                                         05/05/2024 02:47:31 
+05/05/2024 02:47:31 train loss: 0.5366 lr: 2.0000e-05 gnorm: 5.7397 clip: 6
+05/05/2024 02:47:31 valid loss: 0.7414 acc: 0.4982 [BEST: 0.5451]
+05/05/2024 02:47:31 
+05/05/2024 02:47:31 Epoch: 5
+05/05/2024 02:47:32 > epoch 5 updates 282 loss: 0.4558 lr: 2.0000e-05 gnorm: 5.751105/05/2024 02:47:33 > epoch 5 updates 284 loss: 0.4832 lr: 2.0000e-05 gnorm: 4.052505/05/2024 02:47:34 > epoch 5 updates 286 loss: 0.4785 lr: 2.0000e-05 gnorm: 4.337905/05/2024 02:47:35 > epoch 5 updates 288 loss: 0.4378 lr: 2.0000e-05 gnorm: 3.826205/05/2024 02:47:36 > epoch 5 updates 290 loss: 0.5187 lr: 2.0000e-05 gnorm: 7.141605/05/2024 02:47:36 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.33it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.19it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.13it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.00it/s]                                                         05/05/2024 02:47:37 
+05/05/2024 02:47:37 train loss: 0.4750 lr: 2.0000e-05 gnorm: 5.0271 clip: 2
+05/05/2024 02:47:37 valid loss: 0.7383 acc: 0.5199 [BEST: 0.5451]
+05/05/2024 02:47:38 > epoch 5 updates 292 loss: 0.4316 lr: 2.0000e-05 gnorm: 4.115405/05/2024 02:47:39 > epoch 5 updates 294 loss: 0.4464 lr: 2.0000e-05 gnorm: 3.648205/05/2024 02:47:40 > epoch 5 updates 296 loss: 0.4341 lr: 2.0000e-05 gnorm: 5.596705/05/2024 02:47:41 > epoch 5 updates 298 loss: 0.3611 lr: 2.0000e-05 gnorm: 3.189705/05/2024 02:47:42 > epoch 5 updates 300 loss: 0.5228 lr: 2.0000e-05 gnorm: 9.045405/05/2024 02:47:43 > epoch 5 updates 302 loss: 0.5044 lr: 2.0000e-05 gnorm: 4.867105/05/2024 02:47:44 > epoch 5 updates 304 loss: 0.3804 lr: 2.0000e-05 gnorm: 4.259905/05/2024 02:47:46 > epoch 5 updates 306 loss: 0.4829 lr: 2.0000e-05 gnorm: 4.156805/05/2024 02:47:47 > epoch 5 updates 308 loss: 0.4077 lr: 2.0000e-05 gnorm: 3.763005/05/2024 02:47:48 > epoch 5 updates 310 loss: 0.4507 lr: 2.0000e-05 gnorm: 7.408205/05/2024 02:47:49 > epoch 5 updates 312 loss: 0.3781 lr: 2.0000e-05 gnorm: 3.890105/05/2024 02:47:50 > epoch 5 updates 314 loss: 0.4063 lr: 2.0000e-05 gnorm: 4.467505/05/2024 02:47:51 > epoch 5 updates 316 loss: 0.4347 lr: 2.0000e-05 gnorm: 3.883705/05/2024 02:47:52 > epoch 5 updates 318 loss: 0.1092 lr: 2.0000e-05 gnorm: 3.730705/05/2024 02:47:53 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.80it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.31it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.20it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.03it/s]                                                         05/05/2024 02:47:53 
+05/05/2024 02:47:53 train loss: 0.4089 lr: 2.0000e-05 gnorm: 4.7086 clip: 3
+05/05/2024 02:47:53 valid loss: 0.7706 acc: 0.5307 [BEST: 0.5451]
+05/05/2024 02:47:54 > epoch 5 updates 320 loss: 0.3833 lr: 2.0000e-05 gnorm: 3.665205/05/2024 02:47:55 > epoch 5 updates 322 loss: 0.4660 lr: 2.0000e-05 gnorm: 4.976005/05/2024 02:47:56 > epoch 5 updates 324 loss: 0.5064 lr: 2.0000e-05 gnorm: 6.182005/05/2024 02:47:57 > epoch 5 updates 326 loss: 0.3813 lr: 2.0000e-05 gnorm: 3.767105/05/2024 02:47:58 > epoch 5 updates 328 loss: 0.4371 lr: 2.0000e-05 gnorm: 4.913805/05/2024 02:47:59 > epoch 5 updates 330 loss: 0.4344 lr: 2.0000e-05 gnorm: 7.328505/05/2024 02:48:00 > epoch 5 updates 332 loss: 0.3678 lr: 2.0000e-05 gnorm: 3.682205/05/2024 02:48:01 > epoch 5 updates 334 loss: 0.4777 lr: 2.0000e-05 gnorm: 5.027705/05/2024 02:48:02 > epoch 5 updates 336 loss: 0.4124 lr: 2.0000e-05 gnorm: 3.929705/05/2024 02:48:04 > epoch 5 updates 338 loss: 0.4322 lr: 2.0000e-05 gnorm: 4.387905/05/2024 02:48:05 > epoch 5 updates 340 loss: 0.4696 lr: 2.0000e-05 gnorm: 8.567405/05/2024 02:48:06 > epoch 5 updates 342 loss: 0.4168 lr: 2.0000e-05 gnorm: 5.327505/05/2024 02:48:07 > epoch 5 updates 344 loss: 0.4824 lr: 2.0000e-05 gnorm: 4.421805/05/2024 02:48:08 > epoch 5 updates 346 loss: 0.4545 lr: 2.0000e-05 gnorm: 6.040705/05/2024 02:48:09 > epoch 5 updates 348 loss: 0.5461 lr: 2.0000e-05 gnorm: 11.460505/05/2024 02:48:09 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.26it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.16it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.14it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.01it/s]                                                         05/05/2024 02:48:10 
+05/05/2024 02:48:10 train loss: 0.4454 lr: 2.0000e-05 gnorm: 5.6218 clip: 7
+05/05/2024 02:48:10 valid loss: 0.7962 acc: 0.5271 [BEST: 0.5451]
+05/05/2024 02:48:11 > epoch 5 updates 350 loss: 0.4608 lr: 2.0000e-05 gnorm: 6.278505/05/2024 02:48:11 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 12.59it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.76it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.84it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.69it/s]                                                         05/05/2024 02:48:11 
+05/05/2024 02:48:11 train loss: 0.4608 lr: 2.0000e-05 gnorm: 6.2785 clip: 1
+05/05/2024 02:48:11 valid loss: 0.7860 acc: 0.5054 [BEST: 0.5451]
+05/05/2024 02:48:11 
+05/05/2024 02:48:11 Epoch: 6
+05/05/2024 02:48:12 > epoch 6 updates 352 loss: 0.3433 lr: 2.0000e-05 gnorm: 4.099305/05/2024 02:48:14 > epoch 6 updates 354 loss: 0.3986 lr: 2.0000e-05 gnorm: 4.221805/05/2024 02:48:15 > epoch 6 updates 356 loss: 0.4592 lr: 2.0000e-05 gnorm: 10.943105/05/2024 02:48:16 > epoch 6 updates 358 loss: 0.4871 lr: 2.0000e-05 gnorm: 4.598005/05/2024 02:48:17 > epoch 6 updates 360 loss: 0.2563 lr: 2.0000e-05 gnorm: 3.155905/05/2024 02:48:18 > epoch 6 updates 362 loss: 0.3456 lr: 2.0000e-05 gnorm: 3.799605/05/2024 02:48:19 > epoch 6 updates 364 loss: 0.4118 lr: 2.0000e-05 gnorm: 8.434405/05/2024 02:48:20 > epoch 6 updates 366 loss: 0.4376 lr: 2.0000e-05 gnorm: 5.829605/05/2024 02:48:21 > epoch 6 updates 368 loss: 0.4384 lr: 2.0000e-05 gnorm: 7.588605/05/2024 02:48:22 > epoch 6 updates 370 loss: 0.3134 lr: 2.0000e-05 gnorm: 6.500205/05/2024 02:48:23 > epoch 6 updates 372 loss: 0.3753 lr: 2.0000e-05 gnorm: 7.955505/05/2024 02:48:24 > epoch 6 updates 374 loss: 0.3494 lr: 2.0000e-05 gnorm: 5.136705/05/2024 02:48:25 > epoch 6 updates 376 loss: 0.3858 lr: 2.0000e-05 gnorm: 8.039705/05/2024 02:48:26 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.34it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.25it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.22it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.07it/s]                                                         05/05/2024 02:48:26 
+05/05/2024 02:48:26 train loss: 0.3845 lr: 2.0000e-05 gnorm: 6.2025 clip: 8
+05/05/2024 02:48:26 valid loss: 0.8465 acc: 0.5054 [BEST: 0.5451]
+05/05/2024 02:48:27 > epoch 6 updates 378 loss: 0.3219 lr: 2.0000e-05 gnorm: 8.294505/05/2024 02:48:28 > epoch 6 updates 380 loss: 0.3876 lr: 2.0000e-05 gnorm: 4.559805/05/2024 02:48:29 > epoch 6 updates 382 loss: 0.3844 lr: 2.0000e-05 gnorm: 4.721705/05/2024 02:48:30 > epoch 6 updates 384 loss: 0.3782 lr: 2.0000e-05 gnorm: 6.057205/05/2024 02:48:31 > epoch 6 updates 386 loss: 0.3152 lr: 2.0000e-05 gnorm: 3.756505/05/2024 02:48:32 > epoch 6 updates 388 loss: 0.4022 lr: 2.0000e-05 gnorm: 5.274005/05/2024 02:48:33 > epoch 6 updates 390 loss: 0.3149 lr: 2.0000e-05 gnorm: 4.054305/05/2024 02:48:35 > epoch 6 updates 392 loss: 0.3733 lr: 2.0000e-05 gnorm: 4.231105/05/2024 02:48:36 > epoch 6 updates 394 loss: 0.4086 lr: 2.0000e-05 gnorm: 8.906805/05/2024 02:48:37 > epoch 6 updates 396 loss: 0.3993 lr: 2.0000e-05 gnorm: 5.453505/05/2024 02:48:38 > epoch 6 updates 398 loss: 0.2362 lr: 2.0000e-05 gnorm: 4.351305/05/2024 02:48:39 > epoch 6 updates 400 loss: 0.3460 lr: 2.0000e-05 gnorm: 6.101805/05/2024 02:48:40 > epoch 6 updates 402 loss: 0.2795 lr: 2.0000e-05 gnorm: 3.859905/05/2024 02:48:41 > epoch 6 updates 404 loss: 0.3270 lr: 2.0000e-05 gnorm: 3.932805/05/2024 02:48:42 > epoch 6 updates 406 loss: 0.4374 lr: 2.0000e-05 gnorm: 5.382805/05/2024 02:48:42 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.29it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.17it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.17it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.05it/s]                                                         05/05/2024 02:48:43 
+05/05/2024 02:48:43 train loss: 0.3539 lr: 2.0000e-05 gnorm: 5.2484 clip: 7
+05/05/2024 02:48:43 valid loss: 0.8684 acc: 0.5018 [BEST: 0.5451]
+05/05/2024 02:48:44 > epoch 6 updates 408 loss: 0.4062 lr: 2.0000e-05 gnorm: 5.322805/05/2024 02:48:45 > epoch 6 updates 410 loss: 0.3264 lr: 2.0000e-05 gnorm: 6.192405/05/2024 02:48:46 > epoch 6 updates 412 loss: 0.3527 lr: 2.0000e-05 gnorm: 4.641205/05/2024 02:48:47 > epoch 6 updates 414 loss: 0.3894 lr: 2.0000e-05 gnorm: 7.156805/05/2024 02:48:49 > epoch 6 updates 416 loss: 0.3255 lr: 2.0000e-05 gnorm: 4.662005/05/2024 02:48:50 > epoch 6 updates 418 loss: 0.3775 lr: 2.0000e-05 gnorm: 6.307805/05/2024 02:48:51 > epoch 6 updates 420 loss: 0.2905 lr: 2.0000e-05 gnorm: 3.798505/05/2024 02:48:51 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.32it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.19it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.16it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.01it/s]                                                         Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'cls.predictions.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+05/05/2024 02:48:51 
+05/05/2024 02:48:51 train loss: 0.3522 lr: 2.0000e-05 gnorm: 5.4339 clip: 4
+05/05/2024 02:48:51 valid loss: 0.8893 acc: 0.4910 [BEST: 0.5451]
+05/05/2024 02:48:51 
+05/05/2024 02:48:51 Training complete.
+05/05/2024 02:48:51 best dev score 0.5451263537906137 at step 87 (epoch 2).
+05/05/2024 02:48:51 best eval stats [loss: 0.6965 acc: 0.5451]
+05/05/2024 02:48:51 Training time: 0:07:00.
+05/05/2024 02:48:51 TensorBoard activated.
+05/05/2024 02:50:22 #classes: 2; #vocab: 15869
+05/05/2024 02:50:43 trainable params: 138,994,180
+05/05/2024 02:50:43 trainable params (exclude embeddings): 138,994,180
+05/05/2024 02:50:44 { '__index__': 0,
+  '__parents__': ['default', 'data/rte'],
+  '__repeat__': 1,
+  'alignment': 'identity',
+  'batch_size': 36,
+  'beta1': 0.9,
+  'beta2': 0.999,
+  'blocks': 3,
+  'connection': 'aug',
+  'cuda': True,
+  'data_dir': 'data/rte',
+  'deterministic': True,
+  'dropout': 0.2,
+  'early_stopping': 11112,
+  'embedding_dim': 300,
+  'embedding_mode': 'freq',
+  'enc_layers': 3,
+  'encoder': 'cnn',
+  'epochs': 6,
+  'eval_epoch': True,
+  'eval_file': 'test',
+  'eval_per_samples': 1024,
+  'eval_per_samples_warmup': 40000,
+  'eval_per_updates': 29,
+  'eval_per_updates_warmup': 1112,
+  'eval_subset': None,
+  'eval_warmup_samples': 0,
+  'eval_warmup_steps': 0,
+  'fix_embeddings': True,
+  'fusion': 'full',
+  'grad_clipping': 5,
+  'hidden_size': 200,
+  'ib_type': 'rmib',
+  'kernel_sizes': [3],
+  'kl_beta': 0.03,
+  'log_file': 'log.txt',
+  'log_per_samples': 64,
+  'log_per_updates': 2,
+  'lower_case': True,
+  'lr': 2e-05,
+  'lr_decay_rate': 1.0,
+  'lr_decay_samples': 128000,
+  'lr_decay_steps': 3556,
+  'lr_warmup_samples': 0,
+  'lr_warmup_steps': 0,
+  'max_len': 100,
+  'max_loss': 999.0,
+  'max_vocab': 999999,
+  'metric': 'acc',
+  'min_df': 5,
+  'min_len': 1,
+  'min_lr': 1e-05,
+  'min_samples': 0,
+  'min_steps': 0,
+  'model': 'sbert',
+  'model_path': 'bert-base-uncased',
+  'multi_gpu': True,
+  'name': 'benchmark_sbert_36',
+  'num_classes': 2,
+  'num_vocab': 15869,
+  'output_dir': 'models/rte',
+  'padding': 0,
+  'prediction': 'full',
+  'pretrained_embeddings': 'resources/glove.840B.300d.txt',
+  'resume': None,
+  'save': True,
+  'save_all': False,
+  'seed': 32,
+  'sort_by_len': False,
+  'summary_dir': 'models/rte/benchmark_sbert_36',
+  'summary_per_logs': 20,
+  'summary_per_updates': 40,
+  'tensorboard': True,
+  'tolerance_samples': 400000,
+  'watch_metrics': ['acc'],
+  'weight_decay': 0,
+  'z_beat': 0.01,
+  'z_ce_loss_beat': 0.02}
+05/05/2024 02:50:44 train (2490) | test (277)
+05/05/2024 02:50:45 setup complete: 0:01:53s.
+05/05/2024 02:50:45 Epoch: 1
+05/05/2024 02:50:46 > epoch 1 updates 2 loss: 0.8593 lr: 2.0000e-05 gnorm: 6.157305/05/2024 02:50:47 > epoch 1 updates 4 loss: 0.8402 lr: 2.0000e-05 gnorm: 5.575305/05/2024 02:50:49 > epoch 1 updates 6 loss: 0.8976 lr: 2.0000e-05 gnorm: 8.011105/05/2024 02:50:50 > epoch 1 updates 8 loss: 0.8040 lr: 2.0000e-05 gnorm: 5.149505/05/2024 02:50:51 > epoch 1 updates 10 loss: 0.7812 lr: 2.0000e-05 gnorm: 5.738105/05/2024 02:50:52 > epoch 1 updates 12 loss: 0.7178 lr: 2.0000e-05 gnorm: 4.715205/05/2024 02:50:53 > epoch 1 updates 14 loss: 0.7586 lr: 2.0000e-05 gnorm: 5.711805/05/2024 02:50:54 > epoch 1 updates 16 loss: 0.7726 lr: 2.0000e-05 gnorm: 4.919805/05/2024 02:50:55 > epoch 1 updates 18 loss: 0.8591 lr: 2.0000e-05 gnorm: 5.343605/05/2024 02:50:57 > epoch 1 updates 20 loss: 0.7349 lr: 2.0000e-05 gnorm: 5.085905/05/2024 02:50:58 > epoch 1 updates 22 loss: 0.7803 lr: 2.0000e-05 gnorm: 5.400405/05/2024 02:50:59 > epoch 1 updates 24 loss: 0.8103 lr: 2.0000e-05 gnorm: 6.284205/05/2024 02:51:00 > epoch 1 updates 26 loss: 0.8883 lr: 2.0000e-05 gnorm: 6.848105/05/2024 02:51:01 > epoch 1 updates 28 loss: 0.7259 lr: 2.0000e-05 gnorm: 4.930605/05/2024 02:51:02 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.27it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.24it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.21it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 14.04it/s]                                                         05/05/2024 02:51:08 
+05/05/2024 02:51:08 train loss: 0.8015 lr: 2.0000e-05 gnorm: 5.6988 clip: 11
+05/05/2024 02:51:08 valid loss: 0.7664 acc: 0.4838 [NEW BEST]
+05/05/2024 02:51:09 > epoch 1 updates 30 loss: 0.8078 lr: 2.0000e-05 gnorm: 6.405105/05/2024 02:51:10 > epoch 1 updates 32 loss: 0.6934 lr: 2.0000e-05 gnorm: 5.263705/05/2024 02:51:11 > epoch 1 updates 34 loss: 0.7598 lr: 2.0000e-05 gnorm: 5.288205/05/2024 02:51:13 > epoch 1 updates 36 loss: 0.8389 lr: 2.0000e-05 gnorm: 6.078805/05/2024 02:51:14 > epoch 1 updates 38 loss: 0.7637 lr: 2.0000e-05 gnorm: 4.789005/05/2024 02:51:15 > epoch 1 updates 40 loss: 0.9131 lr: 2.0000e-05 gnorm: 5.629605/05/2024 02:51:16 > epoch 1 updates 42 loss: 0.7565 lr: 2.0000e-05 gnorm: 5.260105/05/2024 02:51:17 > epoch 1 updates 44 loss: 0.7759 lr: 2.0000e-05 gnorm: 6.358505/05/2024 02:51:18 > epoch 1 updates 46 loss: 0.7748 lr: 2.0000e-05 gnorm: 5.257705/05/2024 02:51:19 > epoch 1 updates 48 loss: 0.7392 lr: 2.0000e-05 gnorm: 11.128205/05/2024 02:51:20 > epoch 1 updates 50 loss: 0.8124 lr: 2.0000e-05 gnorm: 5.685705/05/2024 02:51:22 > epoch 1 updates 52 loss: 0.6593 lr: 2.0000e-05 gnorm: 4.273005/05/2024 02:51:23 > epoch 1 updates 54 loss: 0.7850 lr: 2.0000e-05 gnorm: 5.270805/05/2024 02:51:24 > epoch 1 updates 56 loss: 0.7718 lr: 2.0000e-05 gnorm: 4.809605/05/2024 02:51:25 > epoch 1 updates 58 loss: 0.7414 lr: 2.0000e-05 gnorm: 4.775505/05/2024 02:51:25 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.26it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.12it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.12it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.93it/s]                                                         05/05/2024 02:51:32 
+05/05/2024 02:51:32 train loss: 0.7723 lr: 2.0000e-05 gnorm: 5.7461 clip: 11
+05/05/2024 02:51:32 valid loss: 0.7616 acc: 0.5271 [NEW BEST]
+05/05/2024 02:51:33 > epoch 1 updates 60 loss: 0.7357 lr: 2.0000e-05 gnorm: 4.691305/05/2024 02:51:34 > epoch 1 updates 62 loss: 0.6761 lr: 2.0000e-05 gnorm: 4.345905/05/2024 02:51:35 > epoch 1 updates 64 loss: 0.8259 lr: 2.0000e-05 gnorm: 5.210005/05/2024 02:51:36 > epoch 1 updates 66 loss: 0.6281 lr: 2.0000e-05 gnorm: 4.495905/05/2024 02:51:37 > epoch 1 updates 68 loss: 0.7431 lr: 2.0000e-05 gnorm: 4.645905/05/2024 02:51:38 > epoch 1 updates 70 loss: 0.7884 lr: 2.0000e-05 gnorm: 5.202205/05/2024 02:51:38 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.20it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.11it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.10it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.95it/s]                                                         05/05/2024 02:51:39 
+05/05/2024 02:51:39 train loss: 0.7331 lr: 2.0000e-05 gnorm: 4.7675 clip: 2
+05/05/2024 02:51:39 valid loss: 0.7742 acc: 0.4946 [BEST: 0.5271]
+05/05/2024 02:51:39 
+05/05/2024 02:51:39 Epoch: 2
+05/05/2024 02:51:40 > epoch 2 updates 72 loss: 0.6310 lr: 2.0000e-05 gnorm: 4.694505/05/2024 02:51:41 > epoch 2 updates 74 loss: 0.7132 lr: 2.0000e-05 gnorm: 4.710305/05/2024 02:51:42 > epoch 2 updates 76 loss: 0.8322 lr: 2.0000e-05 gnorm: 5.552905/05/2024 02:51:44 > epoch 2 updates 78 loss: 0.7490 lr: 2.0000e-05 gnorm: 5.273605/05/2024 02:51:45 > epoch 2 updates 80 loss: 0.7472 lr: 2.0000e-05 gnorm: 4.789605/05/2024 02:51:46 > epoch 2 updates 82 loss: 0.6807 lr: 2.0000e-05 gnorm: 4.281205/05/2024 02:51:47 > epoch 2 updates 84 loss: 0.6871 lr: 2.0000e-05 gnorm: 4.354405/05/2024 02:51:48 > epoch 2 updates 86 loss: 0.7956 lr: 2.0000e-05 gnorm: 4.860205/05/2024 02:51:49 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.15it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.09it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.04it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.88it/s]                                                         05/05/2024 02:51:49 
+05/05/2024 02:51:49 train loss: 0.7298 lr: 2.0000e-05 gnorm: 4.8115 clip: 2
+05/05/2024 02:51:49 valid loss: 0.7999 acc: 0.4657 [BEST: 0.5271]
+05/05/2024 02:51:50 > epoch 2 updates 88 loss: 0.7577 lr: 2.0000e-05 gnorm: 4.766505/05/2024 02:51:51 > epoch 2 updates 90 loss: 0.7956 lr: 2.0000e-05 gnorm: 4.937605/05/2024 02:51:52 > epoch 2 updates 92 loss: 0.8494 lr: 2.0000e-05 gnorm: 5.704105/05/2024 02:51:53 > epoch 2 updates 94 loss: 0.7497 lr: 2.0000e-05 gnorm: 4.880905/05/2024 02:51:55 > epoch 2 updates 96 loss: 0.7223 lr: 2.0000e-05 gnorm: 4.453005/05/2024 02:51:56 > epoch 2 updates 98 loss: 0.7045 lr: 2.0000e-05 gnorm: 4.403505/05/2024 02:51:57 > epoch 2 updates 100 loss: 0.8011 lr: 2.0000e-05 gnorm: 5.015405/05/2024 02:51:58 > epoch 2 updates 102 loss: 0.6648 lr: 2.0000e-05 gnorm: 4.657805/05/2024 02:51:59 > epoch 2 updates 104 loss: 0.6874 lr: 2.0000e-05 gnorm: 4.468005/05/2024 02:52:00 > epoch 2 updates 106 loss: 0.7657 lr: 2.0000e-05 gnorm: 5.062405/05/2024 02:52:01 > epoch 2 updates 108 loss: 0.6816 lr: 2.0000e-05 gnorm: 4.320405/05/2024 02:52:02 > epoch 2 updates 110 loss: 0.6776 lr: 2.0000e-05 gnorm: 4.641105/05/2024 02:52:04 > epoch 2 updates 112 loss: 0.7780 lr: 2.0000e-05 gnorm: 5.059305/05/2024 02:52:05 > epoch 2 updates 114 loss: 0.7370 lr: 2.0000e-05 gnorm: 4.863705/05/2024 02:52:06 > epoch 2 updates 116 loss: 0.7421 lr: 2.0000e-05 gnorm: 4.712705/05/2024 02:52:06 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.01it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.99it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.98it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.81it/s]                                                         05/05/2024 02:52:13 
+05/05/2024 02:52:13 train loss: 0.7402 lr: 2.0000e-05 gnorm: 4.7934 clip: 4
+05/05/2024 02:52:13 valid loss: 0.7351 acc: 0.5560 [NEW BEST]
+05/05/2024 02:52:14 > epoch 2 updates 118 loss: 0.7585 lr: 2.0000e-05 gnorm: 4.681305/05/2024 02:52:16 > epoch 2 updates 120 loss: 0.7671 lr: 2.0000e-05 gnorm: 4.839105/05/2024 02:52:17 > epoch 2 updates 122 loss: 0.7861 lr: 2.0000e-05 gnorm: 5.033605/05/2024 02:52:18 > epoch 2 updates 124 loss: 0.7579 lr: 2.0000e-05 gnorm: 4.738305/05/2024 02:52:19 > epoch 2 updates 126 loss: 0.7285 lr: 2.0000e-05 gnorm: 4.715405/05/2024 02:52:20 > epoch 2 updates 128 loss: 0.7242 lr: 2.0000e-05 gnorm: 4.634905/05/2024 02:52:21 > epoch 2 updates 130 loss: 0.8521 lr: 2.0000e-05 gnorm: 5.157405/05/2024 02:52:22 > epoch 2 updates 132 loss: 0.7663 lr: 2.0000e-05 gnorm: 4.744005/05/2024 02:52:24 > epoch 2 updates 134 loss: 0.8765 lr: 2.0000e-05 gnorm: 7.345105/05/2024 02:52:25 > epoch 2 updates 136 loss: 0.7204 lr: 2.0000e-05 gnorm: 11.487405/05/2024 02:52:26 > epoch 2 updates 138 loss: 0.7450 lr: 2.0000e-05 gnorm: 4.858205/05/2024 02:52:27 > epoch 2 updates 140 loss: 0.7196 lr: 2.0000e-05 gnorm: 5.015105/05/2024 02:52:27 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.01it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.96it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.94it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.79it/s]                                                         05/05/2024 02:52:27 
+05/05/2024 02:52:27 train loss: 0.7667 lr: 2.0000e-05 gnorm: 5.6303 clip: 5
+05/05/2024 02:52:27 valid loss: 0.7844 acc: 0.5162 [BEST: 0.5560]
+05/05/2024 02:52:27 
+05/05/2024 02:52:27 Epoch: 3
+05/05/2024 02:52:29 > epoch 3 updates 142 loss: 0.6931 lr: 2.0000e-05 gnorm: 4.602905/05/2024 02:52:30 > epoch 3 updates 144 loss: 0.7208 lr: 2.0000e-05 gnorm: 4.634305/05/2024 02:52:30 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.07it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.95it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.96it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.82it/s]                                                         05/05/2024 02:52:31 
+05/05/2024 02:52:31 train loss: 0.7070 lr: 2.0000e-05 gnorm: 4.6187 clip: 0
+05/05/2024 02:52:31 valid loss: 0.7761 acc: 0.5126 [BEST: 0.5560]
+05/05/2024 02:52:31 > epoch 3 updates 146 loss: 0.7230 lr: 2.0000e-05 gnorm: 4.603005/05/2024 02:52:33 > epoch 3 updates 148 loss: 0.7640 lr: 2.0000e-05 gnorm: 4.939305/05/2024 02:52:34 > epoch 3 updates 150 loss: 0.6305 lr: 2.0000e-05 gnorm: 4.834205/05/2024 02:52:35 > epoch 3 updates 152 loss: 0.6534 lr: 2.0000e-05 gnorm: 4.397105/05/2024 02:52:36 > epoch 3 updates 154 loss: 0.6891 lr: 2.0000e-05 gnorm: 4.913705/05/2024 02:52:37 > epoch 3 updates 156 loss: 0.6975 lr: 2.0000e-05 gnorm: 4.542405/05/2024 02:52:38 > epoch 3 updates 158 loss: 0.5990 lr: 2.0000e-05 gnorm: 4.134805/05/2024 02:52:39 > epoch 3 updates 160 loss: 0.6445 lr: 2.0000e-05 gnorm: 4.807005/05/2024 02:52:40 > epoch 3 updates 162 loss: 0.6594 lr: 2.0000e-05 gnorm: 4.636505/05/2024 02:52:42 > epoch 3 updates 164 loss: 0.6450 lr: 2.0000e-05 gnorm: 4.496405/05/2024 02:52:43 > epoch 3 updates 166 loss: 0.7395 lr: 2.0000e-05 gnorm: 4.952505/05/2024 02:52:44 > epoch 3 updates 168 loss: 0.7503 lr: 2.0000e-05 gnorm: 5.183305/05/2024 02:52:45 > epoch 3 updates 170 loss: 0.7257 lr: 2.0000e-05 gnorm: 5.653705/05/2024 02:52:46 > epoch 3 updates 172 loss: 0.7387 lr: 2.0000e-05 gnorm: 4.937905/05/2024 02:52:47 > epoch 3 updates 174 loss: 0.7282 lr: 2.0000e-05 gnorm: 5.137805/05/2024 02:52:47 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 12.74it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.85it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.89it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.75it/s]                                                         05/05/2024 02:52:54 
+05/05/2024 02:52:54 train loss: 0.6931 lr: 2.0000e-05 gnorm: 4.8191 clip: 3
+05/05/2024 02:52:54 valid loss: 0.7584 acc: 0.5596 [NEW BEST]
+05/05/2024 02:52:55 > epoch 3 updates 176 loss: 0.6703 lr: 2.0000e-05 gnorm: 5.285005/05/2024 02:52:56 > epoch 3 updates 178 loss: 0.4929 lr: 2.0000e-05 gnorm: 9.092005/05/2024 02:52:57 > epoch 3 updates 180 loss: 0.7057 lr: 2.0000e-05 gnorm: 4.881505/05/2024 02:52:59 > epoch 3 updates 182 loss: 0.6729 lr: 2.0000e-05 gnorm: 5.327905/05/2024 02:53:00 > epoch 3 updates 184 loss: 0.6960 lr: 2.0000e-05 gnorm: 5.019005/05/2024 02:53:01 > epoch 3 updates 186 loss: 0.7660 lr: 2.0000e-05 gnorm: 5.561305/05/2024 02:53:02 > epoch 3 updates 188 loss: 0.7354 lr: 2.0000e-05 gnorm: 5.073305/05/2024 02:53:03 > epoch 3 updates 190 loss: 0.7174 lr: 2.0000e-05 gnorm: 5.275305/05/2024 02:53:04 > epoch 3 updates 192 loss: 0.7516 lr: 2.0000e-05 gnorm: 5.636105/05/2024 02:53:05 > epoch 3 updates 194 loss: 0.6536 lr: 2.0000e-05 gnorm: 5.021305/05/2024 02:53:06 > epoch 3 updates 196 loss: 0.6986 lr: 2.0000e-05 gnorm: 5.044205/05/2024 02:53:07 > epoch 3 updates 198 loss: 0.7392 lr: 2.0000e-05 gnorm: 5.696005/05/2024 02:53:09 > epoch 3 updates 200 loss: 0.6797 lr: 2.0000e-05 gnorm: 5.127805/05/2024 02:53:10 > epoch 3 updates 202 loss: 0.6622 lr: 2.0000e-05 gnorm: 4.992705/05/2024 02:53:10 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.05it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.99it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.97it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.81it/s]                                                         05/05/2024 02:53:17 
+05/05/2024 02:53:17 train loss: 0.6894 lr: 2.0000e-05 gnorm: 5.4876 clip: 12
+05/05/2024 02:53:17 valid loss: 0.7212 acc: 0.6282 [NEW BEST]
+05/05/2024 02:53:18 > epoch 3 updates 204 loss: 0.6708 lr: 2.0000e-05 gnorm: 4.947505/05/2024 02:53:19 > epoch 3 updates 206 loss: 0.6373 lr: 2.0000e-05 gnorm: 5.020705/05/2024 02:53:21 > epoch 3 updates 208 loss: 0.7566 lr: 2.0000e-05 gnorm: 5.568305/05/2024 02:53:22 > epoch 3 updates 210 loss: 0.6715 lr: 2.0000e-05 gnorm: 4.984005/05/2024 02:53:22 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.32it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.07it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 13.01it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.84it/s]                                                         05/05/2024 02:53:22 
+05/05/2024 02:53:22 train loss: 0.6842 lr: 2.0000e-05 gnorm: 5.1309 clip: 2
+05/05/2024 02:53:22 valid loss: 0.7594 acc: 0.5090 [BEST: 0.6282]
+05/05/2024 02:53:22 
+05/05/2024 02:53:22 Epoch: 4
+05/05/2024 02:53:23 > epoch 4 updates 212 loss: 0.5789 lr: 2.0000e-05 gnorm: 4.449805/05/2024 02:53:25 > epoch 4 updates 214 loss: 0.6253 lr: 2.0000e-05 gnorm: 7.000105/05/2024 02:53:26 > epoch 4 updates 216 loss: 0.6524 lr: 2.0000e-05 gnorm: 4.958305/05/2024 02:53:27 > epoch 4 updates 218 loss: 0.6554 lr: 2.0000e-05 gnorm: 5.559705/05/2024 02:53:28 > epoch 4 updates 220 loss: 0.5769 lr: 2.0000e-05 gnorm: 4.444705/05/2024 02:53:29 > epoch 4 updates 222 loss: 0.6678 lr: 2.0000e-05 gnorm: 5.785805/05/2024 02:53:30 > epoch 4 updates 224 loss: 0.5763 lr: 2.0000e-05 gnorm: 4.825705/05/2024 02:53:31 > epoch 4 updates 226 loss: 0.6702 lr: 2.0000e-05 gnorm: 5.232605/05/2024 02:53:32 > epoch 4 updates 228 loss: 0.3760 lr: 2.0000e-05 gnorm: 9.384705/05/2024 02:53:33 > epoch 4 updates 230 loss: 0.5923 lr: 2.0000e-05 gnorm: 4.803705/05/2024 02:53:35 > epoch 4 updates 232 loss: 0.6426 lr: 2.0000e-05 gnorm: 5.086505/05/2024 02:53:35 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.16it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 13.01it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.97it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.79it/s]                                                         05/05/2024 02:53:35 
+05/05/2024 02:53:35 train loss: 0.6007 lr: 2.0000e-05 gnorm: 5.6005 clip: 6
+05/05/2024 02:53:35 valid loss: 0.7980 acc: 0.5379 [BEST: 0.6282]
+05/05/2024 02:53:36 > epoch 4 updates 234 loss: 0.5137 lr: 2.0000e-05 gnorm: 4.413605/05/2024 02:53:37 > epoch 4 updates 236 loss: 0.7121 lr: 2.0000e-05 gnorm: 7.714605/05/2024 02:53:38 > epoch 4 updates 238 loss: 0.6972 lr: 2.0000e-05 gnorm: 5.917705/05/2024 02:53:40 > epoch 4 updates 240 loss: 0.7458 lr: 2.0000e-05 gnorm: 6.539905/05/2024 02:53:41 > epoch 4 updates 242 loss: 0.5092 lr: 2.0000e-05 gnorm: 5.222005/05/2024 02:53:42 > epoch 4 updates 244 loss: 0.7346 lr: 2.0000e-05 gnorm: 6.064305/05/2024 02:53:43 > epoch 4 updates 246 loss: 0.5577 lr: 2.0000e-05 gnorm: 5.484505/05/2024 02:53:44 > epoch 4 updates 248 loss: 0.5864 lr: 2.0000e-05 gnorm: 5.849905/05/2024 02:53:45 > epoch 4 updates 250 loss: 0.6366 lr: 2.0000e-05 gnorm: 6.511705/05/2024 02:53:46 > epoch 4 updates 252 loss: 0.5982 lr: 2.0000e-05 gnorm: 5.254705/05/2024 02:53:48 > epoch 4 updates 254 loss: 0.5971 lr: 2.0000e-05 gnorm: 6.487605/05/2024 02:53:49 > epoch 4 updates 256 loss: 0.7866 lr: 2.0000e-05 gnorm: 8.288705/05/2024 02:53:50 > epoch 4 updates 258 loss: 0.6706 lr: 2.0000e-05 gnorm: 8.335405/05/2024 02:53:51 > epoch 4 updates 260 loss: 0.6593 lr: 2.0000e-05 gnorm: 6.239905/05/2024 02:53:52 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 12.97it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.91it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.91it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.73it/s]                                                         05/05/2024 02:53:52 
+05/05/2024 02:53:52 train loss: 0.6437 lr: 2.0000e-05 gnorm: 6.3282 clip: 13
+05/05/2024 02:53:52 valid loss: 0.8106 acc: 0.5812 [BEST: 0.6282]
+05/05/2024 02:53:53 > epoch 4 updates 262 loss: 0.7075 lr: 2.0000e-05 gnorm: 6.259805/05/2024 02:53:54 > epoch 4 updates 264 loss: 0.5283 lr: 2.0000e-05 gnorm: 4.967505/05/2024 02:53:55 > epoch 4 updates 266 loss: 0.7106 lr: 2.0000e-05 gnorm: 5.906105/05/2024 02:53:56 > epoch 4 updates 268 loss: 0.5451 lr: 2.0000e-05 gnorm: 5.119805/05/2024 02:53:58 > epoch 4 updates 270 loss: 0.6525 lr: 2.0000e-05 gnorm: 5.798305/05/2024 02:53:59 > epoch 4 updates 272 loss: 0.6214 lr: 2.0000e-05 gnorm: 6.793705/05/2024 02:54:00 > epoch 4 updates 274 loss: 0.7744 lr: 2.0000e-05 gnorm: 6.346805/05/2024 02:54:01 > epoch 4 updates 276 loss: 0.6749 lr: 2.0000e-05 gnorm: 5.589505/05/2024 02:54:02 > epoch 4 updates 278 loss: 0.5690 lr: 2.0000e-05 gnorm: 5.140405/05/2024 02:54:03 > epoch 4 updates 280 loss: 0.6503 lr: 2.0000e-05 gnorm: 6.051505/05/2024 02:54:03 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 12.76it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.83it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.85it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.67it/s]                                                         05/05/2024 02:54:04 
+05/05/2024 02:54:04 train loss: 0.6435 lr: 2.0000e-05 gnorm: 5.7985 clip: 9
+05/05/2024 02:54:04 valid loss: 0.7852 acc: 0.5668 [BEST: 0.6282]
+05/05/2024 02:54:04 
+05/05/2024 02:54:04 Epoch: 5
+05/05/2024 02:54:05 > epoch 5 updates 282 loss: 0.5399 lr: 2.0000e-05 gnorm: 5.002605/05/2024 02:54:06 > epoch 5 updates 284 loss: 0.4928 lr: 2.0000e-05 gnorm: 5.250805/05/2024 02:54:07 > epoch 5 updates 286 loss: 0.4897 lr: 2.0000e-05 gnorm: 5.474205/05/2024 02:54:08 > epoch 5 updates 288 loss: 0.3858 lr: 2.0000e-05 gnorm: 4.274905/05/2024 02:54:10 > epoch 5 updates 290 loss: 0.5555 lr: 2.0000e-05 gnorm: 5.827605/05/2024 02:54:10 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.00it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.92it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.91it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.74it/s]                                                         05/05/2024 02:54:10 
+05/05/2024 02:54:10 train loss: 0.4926 lr: 2.0000e-05 gnorm: 5.1674 clip: 4
+05/05/2024 02:54:10 valid loss: 0.8391 acc: 0.5379 [BEST: 0.6282]
+05/05/2024 02:54:11 > epoch 5 updates 292 loss: 0.3375 lr: 2.0000e-05 gnorm: 3.824305/05/2024 02:54:13 > epoch 5 updates 294 loss: 0.3613 lr: 2.0000e-05 gnorm: 4.236205/05/2024 02:54:14 > epoch 5 updates 296 loss: 0.4081 lr: 2.0000e-05 gnorm: 5.612605/05/2024 02:54:15 > epoch 5 updates 298 loss: 0.4441 lr: 2.0000e-05 gnorm: 6.152905/05/2024 02:54:16 > epoch 5 updates 300 loss: 0.4516 lr: 2.0000e-05 gnorm: 6.623805/05/2024 02:54:17 > epoch 5 updates 302 loss: 0.4711 lr: 2.0000e-05 gnorm: 7.782605/05/2024 02:54:18 > epoch 5 updates 304 loss: 0.2939 lr: 2.0000e-05 gnorm: 4.655905/05/2024 02:54:19 > epoch 5 updates 306 loss: 0.4977 lr: 2.0000e-05 gnorm: 6.118805/05/2024 02:54:21 > epoch 5 updates 308 loss: 0.3076 lr: 2.0000e-05 gnorm: 5.394105/05/2024 02:54:22 > epoch 5 updates 310 loss: 0.4816 lr: 2.0000e-05 gnorm: 9.916305/05/2024 02:54:23 > epoch 5 updates 312 loss: 0.3930 lr: 2.0000e-05 gnorm: 8.700505/05/2024 02:54:24 > epoch 5 updates 314 loss: 0.3792 lr: 2.0000e-05 gnorm: 6.705905/05/2024 02:54:25 > epoch 5 updates 316 loss: 0.4944 lr: 2.0000e-05 gnorm: 7.928305/05/2024 02:54:26 > epoch 5 updates 318 loss: 0.0584 lr: 2.0000e-05 gnorm: 1.504605/05/2024 02:54:27 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.05it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.95it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.92it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.72it/s]                                                         05/05/2024 02:54:27 
+05/05/2024 02:54:27 train loss: 0.3832 lr: 2.0000e-05 gnorm: 6.0994 clip: 10
+05/05/2024 02:54:27 valid loss: 1.0079 acc: 0.5199 [BEST: 0.6282]
+05/05/2024 02:54:28 > epoch 5 updates 320 loss: 0.2363 lr: 2.0000e-05 gnorm: 4.106505/05/2024 02:54:29 > epoch 5 updates 322 loss: 0.4185 lr: 2.0000e-05 gnorm: 6.837605/05/2024 02:54:30 > epoch 5 updates 324 loss: 0.4534 lr: 2.0000e-05 gnorm: 7.618705/05/2024 02:54:31 > epoch 5 updates 326 loss: 0.3258 lr: 2.0000e-05 gnorm: 5.872805/05/2024 02:54:32 > epoch 5 updates 328 loss: 0.2569 lr: 2.0000e-05 gnorm: 5.599505/05/2024 02:54:34 > epoch 5 updates 330 loss: 0.4335 lr: 2.0000e-05 gnorm: 7.658305/05/2024 02:54:35 > epoch 5 updates 332 loss: 0.2829 lr: 2.0000e-05 gnorm: 5.288305/05/2024 02:54:36 > epoch 5 updates 334 loss: 0.4967 lr: 2.0000e-05 gnorm: 11.469705/05/2024 02:54:37 > epoch 5 updates 336 loss: 0.3094 lr: 2.0000e-05 gnorm: 5.353405/05/2024 02:54:38 > epoch 5 updates 338 loss: 0.4891 lr: 2.0000e-05 gnorm: 8.662605/05/2024 02:54:39 > epoch 5 updates 340 loss: 0.3929 lr: 2.0000e-05 gnorm: 6.976305/05/2024 02:54:41 > epoch 5 updates 342 loss: 0.4517 lr: 2.0000e-05 gnorm: 7.985905/05/2024 02:54:42 > epoch 5 updates 344 loss: 0.4993 lr: 2.0000e-05 gnorm: 7.334605/05/2024 02:54:43 > epoch 5 updates 346 loss: 0.5634 lr: 2.0000e-05 gnorm: 10.255205/05/2024 02:54:44 > epoch 5 updates 348 loss: 0.4251 lr: 2.0000e-05 gnorm: 9.040705/05/2024 02:54:44 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.08it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.96it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.89it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.71it/s]                                                         05/05/2024 02:54:45 
+05/05/2024 02:54:45 train loss: 0.4047 lr: 2.0000e-05 gnorm: 7.3830 clip: 14
+05/05/2024 02:54:45 valid loss: 1.0119 acc: 0.5560 [BEST: 0.6282]
+05/05/2024 02:54:46 > epoch 5 updates 350 loss: 0.3669 lr: 2.0000e-05 gnorm: 7.049005/05/2024 02:54:46 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 12.97it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.91it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.89it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.68it/s]                                                         05/05/2024 02:54:46 
+05/05/2024 02:54:46 train loss: 0.3669 lr: 2.0000e-05 gnorm: 7.0490 clip: 1
+05/05/2024 02:54:46 valid loss: 0.9987 acc: 0.5199 [BEST: 0.6282]
+05/05/2024 02:54:46 
+05/05/2024 02:54:46 Epoch: 6
+05/05/2024 02:54:47 > epoch 6 updates 352 loss: 0.2352 lr: 2.0000e-05 gnorm: 5.518705/05/2024 02:54:49 > epoch 6 updates 354 loss: 0.2188 lr: 2.0000e-05 gnorm: 4.114105/05/2024 02:54:50 > epoch 6 updates 356 loss: 0.3664 lr: 2.0000e-05 gnorm: 8.538305/05/2024 02:54:51 > epoch 6 updates 358 loss: 0.2475 lr: 2.0000e-05 gnorm: 5.078605/05/2024 02:54:52 > epoch 6 updates 360 loss: 0.1518 lr: 2.0000e-05 gnorm: 3.062005/05/2024 02:54:53 > epoch 6 updates 362 loss: 0.2535 lr: 2.0000e-05 gnorm: 5.503405/05/2024 02:54:54 > epoch 6 updates 364 loss: 0.2367 lr: 2.0000e-05 gnorm: 5.190305/05/2024 02:54:55 > epoch 6 updates 366 loss: 0.3842 lr: 2.0000e-05 gnorm: 10.157605/05/2024 02:54:56 > epoch 6 updates 368 loss: 0.2077 lr: 2.0000e-05 gnorm: 6.286905/05/2024 02:54:57 > epoch 6 updates 370 loss: 0.1303 lr: 2.0000e-05 gnorm: 3.238105/05/2024 02:54:59 > epoch 6 updates 372 loss: 0.2191 lr: 2.0000e-05 gnorm: 5.773805/05/2024 02:55:00 > epoch 6 updates 374 loss: 0.4768 lr: 2.0000e-05 gnorm: 12.518305/05/2024 02:55:01 > epoch 6 updates 376 loss: 0.1705 lr: 2.0000e-05 gnorm: 4.713905/05/2024 02:55:02 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 12.80it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.72it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.74it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.57it/s]                                                         05/05/2024 02:55:02 
+05/05/2024 02:55:02 train loss: 0.2539 lr: 2.0000e-05 gnorm: 6.1549 clip: 9
+05/05/2024 02:55:02 valid loss: 1.2512 acc: 0.5307 [BEST: 0.6282]
+05/05/2024 02:55:03 > epoch 6 updates 378 loss: 0.1437 lr: 2.0000e-05 gnorm: 5.065405/05/2024 02:55:04 > epoch 6 updates 380 loss: 0.2152 lr: 2.0000e-05 gnorm: 5.268305/05/2024 02:55:05 > epoch 6 updates 382 loss: 0.2014 lr: 2.0000e-05 gnorm: 5.109305/05/2024 02:55:06 > epoch 6 updates 384 loss: 0.1698 lr: 2.0000e-05 gnorm: 5.812905/05/2024 02:55:07 > epoch 6 updates 386 loss: 0.2117 lr: 2.0000e-05 gnorm: 7.193805/05/2024 02:55:08 > epoch 6 updates 388 loss: 0.3898 lr: 2.0000e-05 gnorm: 12.575605/05/2024 02:55:09 > epoch 6 updates 390 loss: 0.1164 lr: 2.0000e-05 gnorm: 4.436505/05/2024 02:55:10 > epoch 6 updates 392 loss: 0.3165 lr: 2.0000e-05 gnorm: 8.354405/05/2024 02:55:12 > epoch 6 updates 394 loss: 0.2540 lr: 2.0000e-05 gnorm: 8.093805/05/2024 02:55:13 > epoch 6 updates 396 loss: 0.1441 lr: 2.0000e-05 gnorm: 4.260305/05/2024 02:55:14 > epoch 6 updates 398 loss: 0.1104 lr: 2.0000e-05 gnorm: 3.658305/05/2024 02:55:15 > epoch 6 updates 400 loss: 0.2352 lr: 2.0000e-05 gnorm: 6.158505/05/2024 02:55:16 > epoch 6 updates 402 loss: 0.1652 lr: 2.0000e-05 gnorm: 4.758405/05/2024 02:55:17 > epoch 6 updates 404 loss: 0.1818 lr: 2.0000e-05 gnorm: 4.875605/05/2024 02:55:18 > epoch 6 updates 406 loss: 0.3162 lr: 2.0000e-05 gnorm: 7.397405/05/2024 02:55:18 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 12.95it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.90it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.89it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.72it/s]                                                         05/05/2024 02:55:19 
+05/05/2024 02:55:19 train loss: 0.2117 lr: 2.0000e-05 gnorm: 6.1941 clip: 10
+05/05/2024 02:55:19 valid loss: 1.3186 acc: 0.5271 [BEST: 0.6282]
+05/05/2024 02:55:20 > epoch 6 updates 408 loss: 0.2583 lr: 2.0000e-05 gnorm: 8.446705/05/2024 02:55:21 > epoch 6 updates 410 loss: 0.1723 lr: 2.0000e-05 gnorm: 5.061105/05/2024 02:55:22 > epoch 6 updates 412 loss: 0.3489 lr: 2.0000e-05 gnorm: 8.090905/05/2024 02:55:24 > epoch 6 updates 414 loss: 0.2858 lr: 2.0000e-05 gnorm: 7.907505/05/2024 02:55:25 > epoch 6 updates 416 loss: 0.1894 lr: 2.0000e-05 gnorm: 6.964305/05/2024 02:55:26 > epoch 6 updates 418 loss: 0.1742 lr: 2.0000e-05 gnorm: 7.313405/05/2024 02:55:27 > epoch 6 updates 420 loss: 0.3069 lr: 2.0000e-05 gnorm: 9.614505/05/2024 02:55:27 
+evaluating:   0%|          | 0/8 [00:00<?, ?it/s]evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.11it/s]evaluating:  50%|█████     | 4/8 [00:00<00:00, 12.96it/s]evaluating:  75%|███████▌  | 6/8 [00:00<00:00, 12.92it/s]evaluating: 100%|██████████| 8/8 [00:00<00:00, 13.73it/s]                                                         05/05/2024 02:55:27 
+05/05/2024 02:55:27 train loss: 0.2480 lr: 2.0000e-05 gnorm: 7.6383 clip: 7
+05/05/2024 02:55:27 valid loss: 1.3600 acc: 0.5379 [BEST: 0.6282]
+05/05/2024 02:55:27 
+05/05/2024 02:55:27 Training complete.
+05/05/2024 02:55:27 best dev score 0.628158844765343 at step 203 (epoch 3).
+05/05/2024 02:55:27 best eval stats [loss: 0.7212 acc: 0.6282]
+05/05/2024 02:55:27 Training time: 0:06:36.
