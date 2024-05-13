@@ -16,7 +16,7 @@ The official implementation code for [RMIB: Representation Matching Information 
    `pip install -r requirement.txt`
 
   * runing script </br>
-    ``
+    `python train.py configs/sbert_sick.json5`
 
 ## 🚀 Brief Introduction to RMIB
 
