@@ -1,5 +1,5 @@
 # 🔥Representation Matching Information Bottleneck
-The official implementation code for [RMIB: Representation Matching Information Bottleneck for Matching Text Representations](). This repo is build based on [RE2](https://github.com/alibaba-edu/simple-effective-text-matching-pytorch). To ensure the reproducibility of the experiment, we set the seed of all experiments to 32. We also upload training logs for BERT and SBERT to the path `.\logs\`.
+The official implementation code for [RMIB: Representation Matching Information Bottleneck for Matching Text Representations](). This repo is build based on [RE2](https://github.com/alibaba-edu/simple-effective-text-matching-pytorch) (ICML2024). To ensure the reproducibility of the experiment, we set the seed of all experiments to 32. We also upload training logs for BERT and SBERT to the path `.\logs\`.
 
 ## 🚗Installation and Running
 
