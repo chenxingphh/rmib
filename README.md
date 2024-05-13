@@ -1,5 +1,5 @@
 # 🔥Representation Matching Information Bottleneck
-The official implementation code for [RMIB: Representation Matching Information Bottleneck for Matching Text Representations]() (ICML2024). This repo is build based on [RE2](https://github.com/alibaba-edu/simple-effective-text-matching-pytorch). To ensure the reproducibility of the experiment, we set the seed of all experiments to 32. We also upload training logs for BERT and SBERT to the path `.\logs\`.
+The official implementation code for [RMIB: Representation Matching Information Bottleneck for Matching Text Representations]() (ICML2024). This repo is build based on [RE2](https://github.com/alibaba-edu/simple-effective-text-matching-pytorch). To ensure the reproducibility of the experiment, we set the seed of all experiments to 32. We also upload training logs for BERT and SBERT to the path `logs/`.
 
 ## 🚗Installation and Running
 
@@ -15,7 +15,9 @@ The official implementation code for [RMIB: Representation Matching Information 
   * Install related packages </br>
    `pip install -r requirement.txt`
 
-  * runing script </br>
+  * Download [GloVe word vectors](https://nlp.stanford.edu/projects/glove/) (glove.840B.300d) to `resources/`
+  
+  * Runing script (Using different configs to run different models and datasets) </br>
     `python train.py configs/sbert_sick.json5`
 
 ## 🚀 Brief Introduction to RMIB
